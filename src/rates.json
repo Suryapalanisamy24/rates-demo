@@ -27,24 +27,6 @@
             {
                 "name": "Origin Charges",
                 "origin_charges": {
-                    "doc_fee": {
-                        "basis": "BL",
-                        "name": "Document Fee - origin",
-                        "qty": "",
-                        "currency": "",
-                        "unit_rate": "",
-                        "total_rate": "",
-                        "usd_rate": ""
-                    },
-                    "thc": {
-                        "basis": "Container",
-                        "name": "THC - Origin",
-                        "qty": "",
-                        "currency": "",
-                        "unit_rate": "",
-                        "total_rate": "",
-                        "usd_rate": ""
-                    },
                     "contigency_fee": {
                         "basis": "Container",
                         "name": "Contingency Adjustment Charge",
@@ -71,30 +53,12 @@
                         "unit_rate": 100,
                         "total_rate": 100,
                         "usd_rate": 100
-                    },
-                    "inland_fee": {
-                        "basis": "container",
-                        "name": "Inland hualage",
-                        "qty": "",
-                        "currency": "",
-                        "unit_rate": "",
-                        "total_rate": "",
-                        "usd_rate": ""
                     }
                 }
             },
             {
                 "name": "Destination Charges",
                 "destination_charges": {
-                    "doc_fee": {
-                        "basis": "BL",
-                        "name": "Doc Fee - destination",
-                        "qty": 1,
-                        "currency": "",
-                        "unit_rate": "",
-                        "total_rate": "",
-                        "usd_rate": ""
-                    },
                     "thc": {
                         "basis": "Container",
                         "name": "THC - destination",
@@ -103,15 +67,6 @@
                         "unit_rate": 8770,
                         "total_rate": 8770,
                         "usd_rate": 104
-                    },
-                    "inland_fee": {
-                        "basis": "container",
-                        "name": "Inland hualage",
-                        "qty": "",
-                        "currency": "",
-                        "unit_rate": "",
-                        "total_rate": "",
-                        "usd_rate": ""
                     }
                 }
             }
@@ -173,30 +128,12 @@
                         "unit_rate": 100,
                         "total_rate": 100,
                         "usd_rate": 100
-                    },
-                    "inland_fee": {
-                        "basis": "container",
-                        "name": "Inland hualage",
-                        "qty": "",
-                        "currency": "",
-                        "unit_rate": "",
-                        "total_rate": "",
-                        "usd_rate": ""
                     }
                 }
             },
             {
                 "name": "Destination Charges",
                 "destination_charges": {
-                    "doc_fee": {
-                        "basis": "BL",
-                        "name": "Doc Fee - destination",
-                        "qty": 1,
-                        "currency": "",
-                        "unit_rate": "",
-                        "total_rate": "",
-                        "usd_rate": ""
-                    },
                     "thc": {
                         "basis": "Container",
                         "name": "THC - destination",
@@ -205,15 +142,6 @@
                         "unit_rate": 13970,
                         "total_rate": 13970,
                         "usd_rate": 165
-                    },
-                    "inland_fee": {
-                        "basis": "container",
-                        "name": "Inland hualage",
-                        "qty": "",
-                        "currency": "",
-                        "unit_rate": "",
-                        "total_rate": "",
-                        "usd_rate": ""
                     }
                 }
             }
@@ -276,15 +204,6 @@
                         "total_rate": 100,
                         "usd_rate": 100
                     },
-                    "inland_fee": {
-                        "basis": "container",
-                        "name": "Inland hualage",
-                        "qty": "",
-                        "currency": "",
-                        "unit_rate": "",
-                        "total_rate": "",
-                        "usd_rate": ""
-                    },
                     "haz_additional": {
                         "basis": "container",
                         "name": "Haz Additional (Medium Risk)",
@@ -299,15 +218,6 @@
             {
                 "name": "Destination Charges",
                 "destination_charges": {
-                    "doc_fee": {
-                        "basis": "BL",
-                        "name": "Doc Fee - destination",
-                        "qty": 1,
-                        "currency": "",
-                        "unit_rate": "",
-                        "total_rate": "",
-                        "usd_rate": ""
-                    },
                     "thc": {
                         "basis": "Container",
                         "name": "THC - destination",
@@ -316,15 +226,6 @@
                         "unit_rate": 8770,
                         "total_rate": 8770,
                         "usd_rate": 104
-                    },
-                    "inland_fee": {
-                        "basis": "container",
-                        "name": "Inland hualage",
-                        "qty": "",
-                        "currency": "",
-                        "unit_rate": "",
-                        "total_rate": "",
-                        "usd_rate": ""
                     }
                 }
             }
@@ -387,15 +288,6 @@
                         "total_rate": 100,
                         "usd_rate": 100
                     },
-                    "inland_fee": {
-                        "basis": "container",
-                        "name": "Inland hualage",
-                        "qty": "",
-                        "currency": "",
-                        "unit_rate": "",
-                        "total_rate": "",
-                        "usd_rate": ""
-                    },
                     "haz_additional": {
                         "basis": "container",
                         "name": "Haz Additional (Medium Risk)",
@@ -410,15 +302,7 @@
             {
                 "name": "Destination Charges",
                 "destination_charges": {
-                    "doc_fee": {
-                        "basis": "BL",
-                        "name": "Doc Fee - destination",
-                        "qty": 1,
-                        "currency": "",
-                        "unit_rate": "",
-                        "total_rate": "",
-                        "usd_rate": ""
-                    },
+                    
                     "thc": {
                         "basis": "Container",
                         "name": "THC - destination",
@@ -427,15 +311,6 @@
                         "unit_rate": 13970,
                         "total_rate": 13970,
                         "usd_rate": 165
-                    },
-                    "inland_fee": {
-                        "basis": "container",
-                        "name": "Inland hualage",
-                        "qty": "",
-                        "currency": "",
-                        "unit_rate": "",
-                        "total_rate": "",
-                        "usd_rate": ""
                     }
                 }
             }
