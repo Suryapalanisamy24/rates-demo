@@ -5,7 +5,6 @@ import MainNavbar from "../Navbar";
 import ResultTable from "./ResultTable";
 
 export default function PortPair() {
-  const [id, setId] = useState<number | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -19,19 +18,20 @@ export default function PortPair() {
   const originOption = [
     { value: "1", label: "Nhava Sheva" },
     { value: "2", label: "Jebel Ali" },
-    { value: "3", label: "Singapore" },
+    { value: "3", label: "New York" },
     { value: "4", label: "Rotterdam" },
     { value: "5", label: "Bremerhaven" },
+    { value: "6", label: "Copenhagen" },
   ];
 
   const cargoOption = [
-    { value: "1", label: "Consolidated" },
-    { value: "2", label: "General" },
+    { value: "1", label: "Console Cargo" },
+    { value: "2", label: "DG" },
   ];
 
   const TypeOption = [
-    { value: "1", label: "20 DRY" },
-    { value: "2", label: "40 DRY" },
+    { value: "1", label: "20 FT" },
+    { value: "2", label: "40 FT" },
   ];
 
   const handleDataChange = (selectedOption: any, key: string) => {
@@ -39,6 +39,7 @@ export default function PortPair() {
       ...prevData,
       [key]: selectedOption,
     }));
+    setShowResult(false);
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -47,13 +48,7 @@ export default function PortPair() {
     setLoading(true);
     setShowResult(false);
 
-    const generatedId =
-      parseInt(formData.originCountry?.value) +
-      parseInt(formData.destinationCountry?.value);
-
-    // Simulate 2-second loading
     setTimeout(() => {
-      setId(generatedId);
       setLoading(false);
       setShowResult(true);
     }, 2000);
@@ -134,7 +129,7 @@ export default function PortPair() {
             <Row className="mt-4">
               <Col className="d-flex justify-content-center align-items-end">
                 <Form.Group>
-                  <Button variant="success" type="submit">
+                  <Button variant="success" type="submit" disabled={loading}>
                     {loading ? (
                       <>
                         <Spinner
@@ -158,8 +153,15 @@ export default function PortPair() {
       </div>
 
       <div className="d-flex justify-content-center mt-4">
-        <Container>
-          {showResult && <ResultTable id={id} />}
+        <Container className="text-center mt-4">
+          {loading && (
+            <div className="d-flex justify-content-center mt-3">
+              <Spinner animation="border" role="status" />
+            </div>
+          )}
+          {!loading && showResult ? (
+            <ResultTable pol={formData.originCountry?.label} pod={formData.destinationCountry?.label} type={formData.containerType?.label} cargo_type = {formData.cargoType?.label} />
+          )  : null}
         </Container>
       </div>
     </>

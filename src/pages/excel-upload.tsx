@@ -43,7 +43,7 @@ export default function ExcelUpload() {
       <Container className="pt-5">
         <Row className="justify-content-center">
           <Col md={6} className="text-center bg-white p-4 rounded shadow">
-            <h3 className="mb-4">Upload Excel File</h3>
+            <h3 className="mb-4">Upload Rate Sheet</h3>
             <Form.Group controlId="formFile" className="mb-4">
               <Form.Control type="file" accept=".xls,.xlsx" onChange={handleFileChange} />
             </Form.Group>
