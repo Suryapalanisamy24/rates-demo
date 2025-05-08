@@ -1,0 +1,269 @@
+[
+    {
+        "id": 5,
+        "pol": "Nhava Sheva",
+        "pod": "Rotterdam",
+        "final_booking_rate": 1000,
+        "charges": [
+            {
+                "name": "Freight Charges",
+                "freight_charges": {
+                    "basic_ocean_freight": {
+                        "basis": "container",
+                        "name": "Basic Ocean freight",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": 1000,
+                        "total_rate": 1000,
+                        "usd_rate": 1000
+                    },
+                    "surchrge_1": {
+                        "basis": "container",
+                        "name": "Surcharge 1",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": 100,
+                        "total_rate": 100,
+                        "usd_rate": 100
+                    },
+                    "surchrge_2": {
+                        "basis": "container",
+                        "name": "Surcharge 2",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": 100,
+                        "total_rate": 100,
+                        "usd_rate": 100
+                    }
+                }
+            },
+            {
+                "name": "Origin Charges",
+                "origin_charges": {
+                    "doc_fee": {
+                        "basis": "container",
+                        "name": "Document Fee - origin",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": 100,
+                        "total_rate": 100,
+                        "usd_rate": 100
+                    },
+                    "thc": {
+                        "basis": "container",
+                        "name": "THC - origin",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": 100,
+                        "total_rate": 100,
+                        "usd_rate": 100
+                    },
+                    "contigency_fee": {
+                        "basis": "container",
+                        "name": "Contingency Adjustment Charge",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": 100,
+                        "total_rate": 100,
+                        "usd_rate": 100
+                    },
+                    "emission_fee": {
+                        "basis": "container",
+                        "name": "Emission Trading System",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": 100,
+                        "total_rate": 100,
+                        "usd_rate": 100
+                    },
+                    "shipper_fee": {
+                        "basis": "container",
+                        "name": "Shipper's Own Additional",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": 100,
+                        "total_rate": 100,
+                        "usd_rate": 100
+                    },
+                    "inland_fee": {
+                        "basis": "container",
+                        "name": "Inland hualage",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": 100,
+                        "total_rate": 100,
+                        "usd_rate": 100
+                    }
+                }
+            },
+            {
+                "name": "Destination Charges",
+                "destination_charges": {
+                    "doc_fee": {
+                        "basis": "container",
+                        "name": "Doc Fee - destination",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": 100,
+                        "total_rate": 100,
+                        "usd_rate": 100
+                    },
+                    "thc": {
+                        "basis": "container",
+                        "name": "THC - destination",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": 100,
+                        "total_rate": 100,
+                        "usd_rate": 100
+                    },
+                    "inland_fee": {
+                        "basis": "container",
+                        "name": "Inland hualage",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": 100,
+                        "total_rate": 100,
+                        "usd_rate": 100
+                    }
+                }
+            }
+        ],
+        "valid_from": "2023-10-01",
+        "valid_to": "2023-10-31"
+    },
+    {
+        "id": 2,
+        "pol": "Nhava Sheva",
+        "pod": "Rotterdam",
+        "final_booking_rate": 1000,
+        "freight": {
+            "basic_ocean_freight": {
+                "basis": "container",
+                "qty": 1,
+                "currency": "USD",
+                "unit_rate": 1000,
+                "total_rate": 1000,
+                "usd_rate": 1000
+            },
+            "surchrge_1": {
+                "basis": "container",
+                "qty": 1,
+                "currency": "USD",
+                "unit_rate": 100,
+                "total_rate": 100,
+                "usd_rate": 100
+            },
+            "surchrge_2": {
+                "basis": "container",
+                "qty": 1,
+                "currency": "USD",
+                "unit_rate": 100,
+                "total_rate": 100,
+                "usd_rate": 100
+            }
+        },
+        "origin_charges": {
+            "doc_fee": {
+                "basis": "container",
+                "qty": 1,
+                "currency": "USD",
+                "unit_rate": 100,
+                "total_rate": 100,
+                "usd_rate": 100
+            },
+            "thc": {
+                "basis": "container",
+                "qty": 1,
+                "currency": "USD",
+                "unit_rate": 100,
+                "total_rate": 100,
+                "usd_rate": 100
+            },
+            "contigency_fee": {
+                "basis": "container",
+                "qty": 1,
+                "currency": "USD",
+                "unit_rate": 100,
+                "total_rate": 100,
+                "usd_rate": 100
+            },
+            "emission_fee": {
+                "basis": "container",
+                "qty": 1,
+                "currency": "USD",
+                "unit_rate": 100,
+                "total_rate": 100,
+                "usd_rate": 100
+            },
+            "shipper_fee": {
+                "basis": "container",
+                "qty": 1,
+                "currency": "USD",
+                "unit_rate": 100,
+                "total_rate": 100,
+                "usd_rate": 100
+            },
+            "inland_fee": {
+                "basis": "container",
+                "qty": 1,
+                "currency": "USD",
+                "unit_rate": 100,
+                "total_rate": 100,
+                "usd_rate": 100
+            }
+        },
+        "destination_charges": {
+            "doc_fee": {
+                "basis": "container",
+                "qty": 1,
+                "currency": "USD",
+                "unit_rate": 100,
+                "total_rate": 100,
+                "usd_rate": 100
+            },
+            "thc": {
+                "basis": "container",
+                "qty": 1,
+                "currency": "USD",
+                "unit_rate": 100,
+                "total_rate": 100,
+                "usd_rate": 100
+            },
+            "contigency_fee": {
+                "basis": "container",
+                "qty": 1,
+                "currency": "USD",
+                "unit_rate": 100,
+                "total_rate": 100,
+                "usd_rate": 100
+            },
+            "emission_fee": {
+                "basis": "container",
+                "qty": 1,
+                "currency": "USD",
+                "unit_rate": 100,
+                "total_rate": 100,
+                "usd_rate": 100
+            },
+            "shipper_fee": {
+                "basis": "container",
+                "qty": 1,
+                "currency": "USD",
+                "unit_rate": 100,
+                "total_rate": 100,
+                "usd_rate": 100
+            },
+            "inland_fee": {
+                "basis": "container",
+                "qty": 1,
+                "currency": "USD",
+                "unit_rate": 100,
+                "total_rate": 100,
+                "usd_rate": 100
+            }
+        },
+        "valid_from": "2023-10-01",
+        "valid_to": "2023-10-31"
+    }
+]
