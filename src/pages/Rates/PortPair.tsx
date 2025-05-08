@@ -16,16 +16,19 @@ export default function PortPair() {
   });
 
   const originOption = [
-    { value: "1", label: "Nhava Sheva" },
-    { value: "2", label: "Jebel Ali" },
-    { value: "3", label: "New York" },
     { value: "4", label: "Rotterdam" },
     { value: "5", label: "Bremerhaven" },
     { value: "6", label: "Copenhagen" },
   ];
 
+  const destinationOption = [
+    { value: "1", label: "Nhava Sheva" },
+    { value: "2", label: "Jebel Ali" },
+    { value: "3", label: "New York" }
+  ];
+
   const cargoOption = [
-    { value: "1", label: "Console Cargo" },
+    { value: "1", label: "Consol Cargo" },
     { value: "2", label: "DG" },
   ];
 
@@ -85,7 +88,7 @@ export default function PortPair() {
                     onChange={(selectedOption) =>
                       handleDataChange(selectedOption, "destinationCountry")
                     }
-                    options={originOption}
+                    options={destinationOption}
                     isClearable
                     placeholder="Select Destination"
                     required

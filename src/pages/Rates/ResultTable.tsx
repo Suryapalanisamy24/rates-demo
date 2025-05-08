@@ -100,7 +100,7 @@ export default function ResultTable({ pol, pod, type, cargo_type }: ResultTableP
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
         >
-          <button className="btn btn-success rounded-pill">{rateEntry.liner}</button>
+          <button className="btn btn-success rounded-pill">Liner Name : {rateEntry.liner}</button>
         </motion.div>
         <p className="text-danger mt-2 fw-semibold">
           Valid from {rateEntry.valid_from} to {rateEntry.valid_to}

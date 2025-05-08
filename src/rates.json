@@ -1,13 +1,13 @@
 [
     {
         "id": 6,
-        "pol": "Nhava Sheva",
-        "pod": "Rotterdam",
+        "pol": "Rotterdam",
+        "pod": "Nhava Sheva",
         "type" : "20 FT",
-        "cargo_type": "Console Cargo",
+        "cargo_type": "Consol Cargo",
         "transhipment": [],
         "liner" : "MSC",
-        "final_booking_rate": 1197,
+        "final_booking_rate": "1,197",
         "exchange_rate": "Considering USD-INR exchange Rate as 84.71",
         "charges": [
             {
@@ -64,8 +64,8 @@
                         "name": "THC - destination",
                         "qty": 1,
                         "currency": "INR",
-                        "unit_rate": 8770,
-                        "total_rate": 8770,
+                        "unit_rate": "8,770",
+                        "total_rate": "8,770",
                         "usd_rate": 104
                     }
                 }
@@ -76,13 +76,13 @@
     },
     {
         "id": 7,
-        "pol": "Nhava Sheva",
-        "pod": "Rotterdam",
+        "pol": "Rotterdam",
+        "pod": "Nhava Sheva",
         "liner" : "MSC",
         "type" : "40 FT",
-        "cargo_type": "Console Cargo",
+        "cargo_type": "Consol Cargo",
         "transhipment": [],
-        "final_booking_rate": 1551,
+        "final_booking_rate": "1,551",
         "exchange_rate": "Considering USD-INR exchange Rate as 84.71",
         "charges": [
             {
@@ -139,8 +139,8 @@
                         "name": "THC - destination",
                         "qty": 1,
                         "currency": "INR",
-                        "unit_rate": 13970,
-                        "total_rate": 13970,
+                        "unit_rate": "13,970",
+                        "total_rate": "13,970",
                         "usd_rate": 165
                     }
                 }
@@ -151,8 +151,8 @@
     },
     {
         "id": 6,
-        "pol": "Nhava Sheva",
-        "pod": "Rotterdam",
+        "pol": "Rotterdam",
+        "pod": "Nhava Sheva",
         "type" : "20 FT",
         "cargo_type": "DG",
         "transhipment": [],
@@ -223,8 +223,8 @@
                         "name": "THC - destination",
                         "qty": 1,
                         "currency": "INR",
-                        "unit_rate": 8770,
-                        "total_rate": 8770,
+                        "unit_rate": "8,770",
+                        "total_rate": "8,770",
                         "usd_rate": 104
                     }
                 }
@@ -235,13 +235,13 @@
     },
     {
         "id": 7,
-        "pol": "Nhava Sheva",
-        "pod": "Rotterdam",
+        "pol": "Rotterdam",
+        "pod": "Nhava Sheva",
         "liner" : "MSC",
         "cargo_type": "DG",
         "type" : "40 FT",
         "transhipment": [],
-        "final_booking_rate": 1851,
+        "final_booking_rate": "1,851",
         "exchange_rate": "Considering USD-INR exchange Rate as 84.71",
         "charges": [
             {
@@ -308,8 +308,8 @@
                         "name": "THC - destination",
                         "qty": 1,
                         "currency": "INR",
-                        "unit_rate": 13970,
-                        "total_rate": 13970,
+                        "unit_rate": "13,970",
+                        "total_rate": "13,970",
                         "usd_rate": 165
                     }
                 }
@@ -323,10 +323,10 @@
         "pol": "Bremerhaven",
         "pod": "New York",
         "liner" : "OOCL",
-        "cargo_type": "Console Cargo",
+        "cargo_type": "Consol Cargo",
         "type" : "20 FT",
         "transhipment": [],
-        "final_booking_rate": 2985,
+        "final_booking_rate": "2,985",
         "exchange_rate": "Considering USD-EUR exchange Rate as 0.88",
         "charges": [
             {
@@ -337,9 +337,9 @@
                         "name": "Basic Ocean freight",
                         "qty": 1,
                         "currency": "USD",
-                        "unit_rate": 1700,
-                        "total_rate": 1700,
-                        "usd_rate": 1700
+                        "unit_rate": "1,700",
+                        "total_rate": "1,700",
+                        "usd_rate": "1,700"
                     }
                 }
             },
@@ -374,7 +374,7 @@
                         "usd_rate": 47
                     },
                     "inland_fee": {
-                        "basis": "container",
+                        "basis": "Container",
                         "name": "Inland hualage",
                         "qty": 1,
                         "currency": "EUR",
@@ -433,11 +433,11 @@
         "id": 7,
         "pol": "Bremerhaven",
         "pod": "New York",
-        "cargo_type": "Console Cargo",
+        "cargo_type": "Consol Cargo",
         "liner" : "OOCL",
         "type" : "40 FT",
         "transhipment": [],
-        "final_booking_rate": 3833,
+        "final_booking_rate": "3,833",
         "exchange_rate": "Considering USD-EUR exchange Rate as 0.88",
         "charges": [
             {
@@ -448,9 +448,9 @@
                         "name": "Basic Ocean freight",
                         "qty": 1,
                         "currency": "USD",
-                        "unit_rate": 2000,
-                        "total_rate": 2000,
-                        "usd_rate": 2000
+                        "unit_rate": "2,000",
+                        "total_rate": "2,000",
+                        "usd_rate": "2,000"
                     }
                 }
             },
@@ -485,7 +485,7 @@
                         "usd_rate": 93
                     },
                     "inland_fee": {
-                        "basis": "container",
+                        "basis": "Container",
                         "name": "Inland hualage",
                         "qty": 1,
                         "currency": "EUR",
@@ -544,11 +544,11 @@
         "id": 7,
         "pol": "Copenhagen",
         "pod": "Jebel Ali",
-        "cargo_type": "Console Cargo",
+        "cargo_type": "Consol Cargo",
         "liner" : "ONE",
         "type" : "20 FT",
         "transhipment": ["Singapore"],
-        "final_booking_rate": 2661,
+        "final_booking_rate": "2,661",
         "exchange_rate": "Considering USD-DKK exchange Rate as 6.60",
         "charges": [
             {
@@ -559,9 +559,9 @@
                         "name": "Basic Ocean freight",
                         "qty": 1,
                         "currency": "USD",
-                        "unit_rate": 1425,
-                        "total_rate": 1425,
-                        "usd_rate": 1425
+                        "unit_rate": "1,425",
+                        "total_rate": "1,425",
+                        "usd_rate": "1,425"
                     }
                 }
             },
@@ -605,9 +605,9 @@
                         "name": "Emergency Surcharge",
                         "qty": 1,
                         "currency": "USD",
-                        "unit_rate": 1000,
-                        "total_rate": 1000,
-                        "usd_rate": 1000
+                        "unit_rate": "1,000",
+                        "total_rate": "1,000",
+                        "usd_rate": "1,000"
                     }
                 }
             }
@@ -619,11 +619,11 @@
         "id": 7,
         "pol": "Copenhagen",
         "pod": "Jebel Ali",
-        "cargo_type": "Console Cargo",
+        "cargo_type": "Consol Cargo",
         "type" : "40 FT",
         "liner" : "ONE",
         "transhipment": ["Singapore"],
-        "final_booking_rate": 3053,
+        "final_booking_rate": "3,053",
         "exchange_rate": "Considering USD-DKK exchange Rate as 6.60",
         "charges": [
             {
@@ -634,9 +634,9 @@
                         "name": "Basic Ocean freight",
                         "qty": 1,
                         "currency": "USD",
-                        "unit_rate": 1650,
-                        "total_rate": 1650,
-                        "usd_rate": 1650
+                        "unit_rate": "1,650",
+                        "total_rate": "1,650",
+                        "usd_rate": "1,650"
                     }
                 }
             },
@@ -666,8 +666,8 @@
                         "name": "Trucking Comp",
                         "qty": 1,
                         "currency": "DKK",
-                        "unit_rate": 1800,
-                        "total_rate": 1800,
+                        "unit_rate": "1,800",
+                        "total_rate": "1,800",
                         "usd_rate": 273
                     }
                 }
@@ -680,9 +680,9 @@
                         "name": "Emergency Surcharge",
                         "qty": 1,
                         "currency": "USD",
-                        "unit_rate": 1000,
-                        "total_rate": 1000,
-                        "usd_rate": 1000
+                        "unit_rate": "1,000",
+                        "total_rate": "1,000",
+                        "usd_rate": "1,000"
                     }
                 }
             }
