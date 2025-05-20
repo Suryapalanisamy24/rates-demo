@@ -507,6 +507,7 @@
             {
                 "name": "Destination Charges",
                 "total_price" : "53",
+                "destination_charges" : {
                 "mandatory_user": {
                         "basis": "TLX",
                         "name": "TLX : BL SURRENDER/TLX RELEASE CHARGES",
@@ -516,6 +517,7 @@
                         "total_rate": "4500",
                         "usd_rate": "53"
                     }
+                }
             }
         ],
         "valid_from": "01-03-2025",
