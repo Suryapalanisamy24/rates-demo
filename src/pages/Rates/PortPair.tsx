@@ -3,6 +3,7 @@ import { Button, Col, Container, Form, Row, Spinner } from "react-bootstrap";
 import Select from "react-select";
 import MainNavbar from "../Navbar";
 import ResultTable from "./ResultTable";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 export default function PortPair() {
   const [showResult, setShowResult] = useState(false);
@@ -16,15 +17,12 @@ export default function PortPair() {
   });
 
   const originOption = [
-    { value: "4", label: "Rotterdam" },
-    { value: "5", label: "Bremerhaven" },
-    { value: "6", label: "Copenhagen" },
+    { value: "1", label: "Nhava Sheva" },
   ];
 
   const destinationOption = [
-    { value: "1", label: "Nhava Sheva" },
     { value: "2", label: "Jebel Ali" },
-    { value: "3", label: "New York" }
+    { value: "4", label: "Los Angeles" }
   ];
 
   const cargoOption = [
@@ -159,7 +157,12 @@ export default function PortPair() {
         <Container className="text-center mt-4">
           {loading && (
             <div className="d-flex justify-content-center mt-3">
-              <Spinner animation="border" role="status" />
+              <DotLottieReact
+                src="https://lottie.host/57e1dc0a-7999-426f-a21c-94c1cddfe5eb/o2uwXb8YvI.lottie"
+                loop
+                autoplay
+                style={{ width: "150px", height: "150px" }}
+              />
             </div>
           )}
           {!loading && showResult ? (

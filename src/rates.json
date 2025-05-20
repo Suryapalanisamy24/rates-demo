@@ -1,693 +1,726 @@
 [
     {
-        "id": 6,
-        "pol": "Rotterdam",
-        "pod": "Nhava Sheva",
-        "type" : "20 FT",
+        "id": 7,
+        "pol": "Nhava Sheva",
+        "pod": "Los Angeles",
         "cargo_type": "Consol Cargo",
+        "type" : "20 FT",
+        "liner" : "CMA",
         "transhipment": [],
-        "liner" : "MSC",
-        "final_booking_rate": "1,197",
-        "exchange_rate": "Considering USD-INR exchange Rate as 84.71",
+        "final_booking_rate": "2,550",
+        "exchange_rate": "*Considering USD-INR exchange Rate as 84.71",
         "charges": [
             {
                 "name": "Freight Charges",
+                "total_price" :"2,360",
                 "freight_charges": {
                     "basic_ocean_freight": {
                         "basis": "Container",
                         "name": "Basic Ocean freight",
                         "qty": 1,
                         "currency": "USD",
-                        "unit_rate": 725,
-                        "total_rate": 725,
-                        "usd_rate": 725
+                        "unit_rate": "2,360",
+                        "total_rate": "2,360",
+                        "usd_rate": "2,360"
                     }
                 }
             },
             {
                 "name": "Origin Charges",
+                "total_price" :"170",
                 "origin_charges": {
-                    "contigency_fee": {
+                    "thc_origin": {
                         "basis": "Container",
-                        "name": "Contingency Adjustment Charge",
+                        "name": "THC - origin",
                         "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": 250,
-                        "total_rate": 250,
-                        "usd_rate": 250
+                        "currency": "INR",
+                        "unit_rate": "10,465",
+                        "total_rate": "10,465",
+                        "usd_rate": "124"
                     },
-                    "emission_fee": {
-                        "basis": "Container",
-                        "name": "Emission Trading System",
+                    "export_declaration_surcharge": {
+                        "basis": "BL",
+                        "name": "Export Declaration Surcharge",
                         "qty": 1,
                         "currency": "USD",
-                        "unit_rate": 18,
-                        "total_rate": 18,
-                        "usd_rate": 18
+                        "unit_rate": "32",
+                        "total_rate": "32",
+                        "usd_rate": "32"
                     },
-                    "shipper_fee": {
+                    "isps": {
                         "basis": "Container",
-                        "name": "Shipper's Own Additional",
+                        "name": "Ocean Carrier-Intl Ship & port (ISPS)",
                         "qty": 1,
                         "currency": "USD",
-                        "unit_rate": 100,
-                        "total_rate": 100,
-                        "usd_rate": 100
+                        "unit_rate": "14",
+                        "total_rate": "14",
+                        "usd_rate": "14"
                     }
                 }
             },
             {
                 "name": "Destination Charges",
+                "total_price" :"20",
                 "destination_charges": {
-                    "thc": {
+                    "container_maintenance": {
                         "basis": "Container",
-                        "name": "THC - destination",
+                        "name": "Container Maintenance Charge",
                         "qty": 1,
-                        "currency": "INR",
-                        "unit_rate": "8,770",
-                        "total_rate": "8,770",
-                        "usd_rate": 104
+                        "currency": "USD",
+                        "unit_rate": "20",
+                        "total_rate": "20",
+                        "usd_rate": "20"
                     }
                 }
             }
         ],
-        "valid_from": "01-09-2024",
-        "valid_to": "30-09-2024"
+        "valid_from": "15-02-2025",
+        "valid_to": "14-03-2025"
     },
     {
         "id": 7,
-        "pol": "Rotterdam",
-        "pod": "Nhava Sheva",
-        "liner" : "MSC",
+        "pol": "Nhava Sheva",
+        "pod": "Los Angeles",
+        "cargo_type": "Consol Cargo",
         "type" : "40 FT",
-        "cargo_type": "Consol Cargo",
+        "liner" : "CMA",
         "transhipment": [],
-        "final_booking_rate": "1,551",
-        "exchange_rate": "Considering USD-INR exchange Rate as 84.71",
+        "final_booking_rate": "3,238",
+        "exchange_rate": "*Considering USD-INR exchange Rate as 84.71",
         "charges": [
             {
                 "name": "Freight Charges",
+                "total_price" :"2,950",
                 "freight_charges": {
                     "basic_ocean_freight": {
                         "basis": "Container",
                         "name": "Basic Ocean freight",
                         "qty": 1,
                         "currency": "USD",
-                        "unit_rate": 750,
-                        "total_rate": 750,
-                        "usd_rate": 750
+                        "unit_rate": "2,950",
+                        "total_rate": "2,950",
+                        "usd_rate": "2,950"
                     }
                 }
             },
             {
                 "name": "Origin Charges",
+                "total_price" :"248",
                 "origin_charges": {
-                    "contigency_fee": {
+                    "thc_origin": {
                         "basis": "Container",
-                        "name": "Contingency Adjustment Charge",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": 500,
-                        "total_rate": 500,
-                        "usd_rate": 500
-                    },
-                    "emission_fee": {
-                        "basis": "Container",
-                        "name": "Emission Trading System",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": 36,
-                        "total_rate": 36,
-                        "usd_rate": 36
-                    },
-                    "shipper_fee": {
-                        "basis": "Container",
-                        "name": "Shipper's Own Additional",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": 100,
-                        "total_rate": 100,
-                        "usd_rate": 100
-                    }
-                }
-            },
-            {
-                "name": "Destination Charges",
-                "destination_charges": {
-                    "thc": {
-                        "basis": "Container",
-                        "name": "THC - destination",
+                        "name": "THC - origin",
                         "qty": 1,
                         "currency": "INR",
-                        "unit_rate": "13,970",
-                        "total_rate": "13,970",
-                        "usd_rate": 165
+                        "unit_rate": "17,125",
+                        "total_rate": "17,125",
+                        "usd_rate": "202"
+                    },
+                    "export_declaration_surcharge": {
+                        "basis": "BL",
+                        "name": "Export Declaration Surcharge",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": "32",
+                        "total_rate": "32",
+                        "usd_rate": "32"
+                    },
+                    "isps": {
+                        "basis": "Container",
+                        "name": "Ocean Carrier-Intl Ship & port (ISPS)",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": "14",
+                        "total_rate": "14",
+                        "usd_rate": "14"
+                    }
+                }
+            },
+            {
+                "name": "Destination Charges",
+                "total_price" :"40",
+                "destination_charges": {
+                    "container_maintenance": {
+                        "basis": "Container",
+                        "name": "Container Maintenance Charge",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": "40",
+                        "total_rate": "40",
+                        "usd_rate": "40"
                     }
                 }
             }
         ],
-        "valid_from": "01-09-2024",
-        "valid_to": "30-09-2024"
+        "valid_from": "15-02-2025",
+        "valid_to": "14-03-2025"
     },
     {
-        "id": 6,
-        "pol": "Rotterdam",
-        "pod": "Nhava Sheva",
-        "type" : "20 FT",
-        "cargo_type": "DG",
+        "id": 7,
+        "pol": "Nhava Sheva",
+        "pod": "Los Angeles",
+        "cargo_type": "Consol Cargo",
+        "type" : "45 FT",
+        "liner" : "CMA",
         "transhipment": [],
-        "liner" : "MSC",
-        "final_booking_rate": 1397,
-        "exchange_rate": "Considering USD-INR exchange Rate as 84.71",
+        "final_booking_rate": "4,038",
+        "exchange_rate": "*Considering USD-INR exchange Rate as 84.71",
         "charges": [
             {
                 "name": "Freight Charges",
+                "total_price" :"3,735",
                 "freight_charges": {
                     "basic_ocean_freight": {
                         "basis": "Container",
                         "name": "Basic Ocean freight",
                         "qty": 1,
                         "currency": "USD",
-                        "unit_rate": 725,
-                        "total_rate": 725,
-                        "usd_rate": 725
+                        "unit_rate": "3,735",
+                        "total_rate": "3,735",
+                        "usd_rate": "3,735"
                     }
                 }
             },
             {
                 "name": "Origin Charges",
+                "total_price" :"263",
                 "origin_charges": {
-                    "contigency_fee": {
+                    "thc_origin": {
                         "basis": "Container",
-                        "name": "Contingency Adjustment Charge",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": 250,
-                        "total_rate": 250,
-                        "usd_rate": 250
-                    },
-                    "emission_fee": {
-                        "basis": "Container",
-                        "name": "Emission Trading System",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": 18,
-                        "total_rate": 18,
-                        "usd_rate": 18
-                    },
-                    "shipper_fee": {
-                        "basis": "Container",
-                        "name": "Shipper's Own Additional",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": 100,
-                        "total_rate": 100,
-                        "usd_rate": 100
-                    },
-                    "haz_additional": {
-                        "basis": "container",
-                        "name": "Haz Additional (Medium Risk)",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": 300,
-                        "total_rate": 300,
-                        "usd_rate": 300
-                    }
-                }
-            },
-            {
-                "name": "Destination Charges",
-                "destination_charges": {
-                    "thc": {
-                        "basis": "Container",
-                        "name": "THC - destination",
+                        "name": "THC - origin",
                         "qty": 1,
                         "currency": "INR",
-                        "unit_rate": "8,770",
-                        "total_rate": "8,770",
-                        "usd_rate": 104
-                    }
-                }
-            }
-        ],
-        "valid_from": "2023-10-01",
-        "valid_to": "2023-10-31"
-    },
-    {
-        "id": 7,
-        "pol": "Rotterdam",
-        "pod": "Nhava Sheva",
-        "liner" : "MSC",
-        "cargo_type": "DG",
-        "type" : "40 FT",
-        "transhipment": [],
-        "final_booking_rate": "1,851",
-        "exchange_rate": "Considering USD-INR exchange Rate as 84.71",
-        "charges": [
-            {
-                "name": "Freight Charges",
-                "freight_charges": {
-                    "basic_ocean_freight": {
-                        "basis": "Container",
-                        "name": "Basic Ocean freight",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": 750,
-                        "total_rate": 750,
-                        "usd_rate": 750
-                    }
-                }
-            },
-            {
-                "name": "Origin Charges",
-                "origin_charges": {
-                    "contigency_fee": {
-                        "basis": "Container",
-                        "name": "Contingency Adjustment Charge",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": 500,
-                        "total_rate": 500,
-                        "usd_rate": 500
+                        "unit_rate": "18,400",
+                        "total_rate": "18,400",
+                        "usd_rate": "217"
                     },
-                    "emission_fee": {
-                        "basis": "Container",
-                        "name": "Emission Trading System",
+                    "export_declaration_surcharge": {
+                        "basis": "BL",
+                        "name": "Export Declaration Surcharge",
                         "qty": 1,
                         "currency": "USD",
-                        "unit_rate": 36,
-                        "total_rate": 36,
-                        "usd_rate": 36
+                        "unit_rate": "32",
+                        "total_rate": "32",
+                        "usd_rate": "32"
                     },
-                    "shipper_fee": {
+                    "isps": {
                         "basis": "Container",
-                        "name": "Shipper's Own Additional",
+                        "name": "Ocean Carrier-Intl Ship & port (ISPS)",
                         "qty": 1,
                         "currency": "USD",
-                        "unit_rate": 100,
-                        "total_rate": 100,
-                        "usd_rate": 100
-                    },
-                    "haz_additional": {
-                        "basis": "container",
-                        "name": "Haz Additional (Medium Risk)",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": 300,
-                        "total_rate": 300,
-                        "usd_rate": 300
+                        "unit_rate": "14",
+                        "total_rate": "14",
+                        "usd_rate": "14"
                     }
                 }
             },
             {
                 "name": "Destination Charges",
+                "total_price" :"40",
                 "destination_charges": {
-                    
-                    "thc": {
+                    "container_maintenance": {
                         "basis": "Container",
-                        "name": "THC - destination",
+                        "name": "Container Maintenance Charge",
                         "qty": 1,
-                        "currency": "INR",
-                        "unit_rate": "13,970",
-                        "total_rate": "13,970",
-                        "usd_rate": 165
+                        "currency": "USD",
+                        "unit_rate": "40",
+                        "total_rate": "40",
+                        "usd_rate": "40"
                     }
                 }
             }
         ],
-        "valid_from": "2023-10-01",
-        "valid_to": "2023-10-31"
+        "valid_from": "15-02-2025",
+        "valid_to": "14-03-2025"
     },
     {
         "id": 7,
-        "pol": "Bremerhaven",
-        "pod": "New York",
-        "liner" : "OOCL",
-        "cargo_type": "Consol Cargo",
-        "type" : "20 FT",
-        "transhipment": [],
-        "final_booking_rate": "2,985",
-        "exchange_rate": "Considering USD-EUR exchange Rate as 0.88",
-        "charges": [
-            {
-                "name": "Freight Charges",
-                "freight_charges": {
-                    "basic_ocean_freight": {
-                        "basis": "Container",
-                        "name": "Basic Ocean freight",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": "1,700",
-                        "total_rate": "1,700",
-                        "usd_rate": "1,700"
-                    }
-                }
-            },
-            {
-                "name": "Origin Charges",
-                "origin_charges": {
-                    "doc_fee": {
-                        "basis": "BL",
-                        "name": "Document Fee - origin",
-                        "qty": 1,
-                        "currency": "EUR",
-                        "unit_rate": 75,
-                        "total_rate": 75,
-                        "usd_rate": 85
-                    },
-                    "csc": {
-                        "basis": "Container",
-                        "name": "CSC - Origin",
-                        "qty": 1,
-                        "currency": "EUR",
-                        "unit_rate": 245,
-                        "total_rate": 245,
-                        "usd_rate": 278
-                    },
-                    "emission_fee": {
-                        "basis": "Container",
-                        "name": "Emission Trading System",
-                        "qty": 1,
-                        "currency": "EUR",
-                        "unit_rate": 41,
-                        "total_rate": 41,
-                        "usd_rate": 47
-                    },
-                    "inland_fee": {
-                        "basis": "Container",
-                        "name": "Inland hualage",
-                        "qty": 1,
-                        "currency": "EUR",
-                        "unit_rate": 25,
-                        "total_rate": 25,
-                        "usd_rate": 28
-                    }
-                }
-            },
-            {
-                "name": "Destination Charges",
-                "destination_charges": {
-                    "ams_fee": {
-                        "basis": "BL",
-                        "name": "AMS",
-                        "qty": 1,
-                        "currency": "EUR",
-                        "unit_rate": 25,
-                        "total_rate": 25,
-                        "usd_rate": 28
-                    },
-                    "thc": {
-                        "basis": "Container",
-                        "name": "THC - Destination",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": 420,
-                        "total_rate": 420,
-                        "usd_rate": 420
-                    },
-                    "sed_fee": {
-                        "basis": "Container",
-                        "name": "SED (Shipper's Export Declaration)",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": 5,
-                        "total_rate": 5,
-                        "usd_rate": 5
-                    },
-                    "fcr_fee": {
-                        "basis": "Container",
-                        "name": "FCR (Freight Cost Recovery)",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate":393,
-                        "total_rate":393,
-                        "usd_rate":393
-                    }
-                }
-            }
-        ],
-        "valid_from": "01-07-2024",
-        "valid_to": "31-07-2024"
-    },
-    {
-        "id": 7,
-        "pol": "Bremerhaven",
-        "pod": "New York",
-        "cargo_type": "Consol Cargo",
-        "liner" : "OOCL",
-        "type" : "40 FT",
-        "transhipment": [],
-        "final_booking_rate": "3,833",
-        "exchange_rate": "Considering USD-EUR exchange Rate as 0.88",
-        "charges": [
-            {
-                "name": "Freight Charges",
-                "freight_charges": {
-                    "basic_ocean_freight": {
-                        "basis": "Container",
-                        "name": "Basic Ocean freight",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": "2,000",
-                        "total_rate": "2,000",
-                        "usd_rate": "2,000"
-                    }
-                }
-            },
-            {
-                "name": "Origin Charges",
-                "origin_charges": {
-                    "doc_fee": {
-                        "basis": "BL",
-                        "name": "Document Fee - origin",
-                        "qty": 1,
-                        "currency": "EUR",
-                        "unit_rate": 75,
-                        "total_rate": 75,
-                        "usd_rate": 85
-                    },
-                    "csc": {
-                        "basis": "Container",
-                        "name": "CSC - Origin",
-                        "qty": 1,
-                        "currency": "EUR",
-                        "unit_rate": 245,
-                        "total_rate": 245,
-                        "usd_rate": 278
-                    },
-                    "emission_fee": {
-                        "basis": "Container",
-                        "name": "Emission Trading System",
-                        "qty": 1,
-                        "currency": "EUR",
-                        "unit_rate": 82,
-                        "total_rate": 82,
-                        "usd_rate": 93
-                    },
-                    "inland_fee": {
-                        "basis": "Container",
-                        "name": "Inland hualage",
-                        "qty": 1,
-                        "currency": "EUR",
-                        "unit_rate": 50,
-                        "total_rate": 50,
-                        "usd_rate": 57
-                    }
-                }
-            },
-            {
-                "name": "Destination Charges",
-                "destination_charges": {
-                    "ams_fee": {
-                        "basis": "BL",
-                        "name": "AMS",
-                        "qty": 1,
-                        "currency": "EUR",
-                        "unit_rate": 25,
-                        "total_rate": 25,
-                        "usd_rate": 28
-                    },
-                    "thc": {
-                        "basis": "Container",
-                        "name": "THC - Destination",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": 500,
-                        "total_rate": 500,
-                        "usd_rate": 500
-                    },
-                    "sed_fee": {
-                        "basis": "Container",
-                        "name": "SED (Shipper's Export Declaration)",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": 5,
-                        "total_rate": 5,
-                        "usd_rate": 5
-                    },
-                    "fcr_fee": {
-                        "basis": "Container",
-                        "name": "FCR (Freight Cost Recovery)",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": 786,
-                        "total_rate": 786,
-                        "usd_rate": 786
-                    }
-                }
-            }
-        ],
-        "valid_from": "01-07-2024",
-        "valid_to": "31-07-2024"
-    },
-    {
-        "id": 7,
-        "pol": "Copenhagen",
-        "pod": "Jebel Ali",
-        "cargo_type": "Consol Cargo",
-        "liner" : "ONE",
-        "type" : "20 FT",
-        "transhipment": ["Singapore"],
-        "final_booking_rate": "2,661",
-        "exchange_rate": "Considering USD-DKK exchange Rate as 6.60",
-        "charges": [
-            {
-                "name": "Freight Charges",
-                "freight_charges": {
-                    "basic_ocean_freight": {
-                        "basis": "Container",
-                        "name": "Basic Ocean freight",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": "1,425",
-                        "total_rate": "1,425",
-                        "usd_rate": "1,425"
-                    }
-                }
-            },
-            {
-                "name": "Origin Charges",
-                "origin_charges": {
-                    "doc_fee": {
-                        "basis": "BL",
-                        "name": "Document Fee - origin",
-                        "qty": 1,
-                        "currency": "DKK",
-                        "unit_rate": 450,
-                        "total_rate": 450,
-                        "usd_rate": 68
-                    },
-                    "csc": {
-                        "basis": "Container",
-                        "name": "EU ETS Surcharge",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": 31,
-                        "total_rate": 31,
-                        "usd_rate": 31
-                    },
-                    "emission_fee": {
-                        "basis": "Container",
-                        "name": "Trucking Comp",
-                        "qty": 1,
-                        "currency": "DKK",
-                        "unit_rate": 900,
-                        "total_rate": 900,
-                        "usd_rate": 136
-                    }
-                }
-            },
-            {
-                "name": "Destination Charges",
-                "destination_charges": {
-                    "sed_fee": {
-                        "basis": "Container",
-                        "name": "Emergency Surcharge",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": "1,000",
-                        "total_rate": "1,000",
-                        "usd_rate": "1,000"
-                    }
-                }
-            }
-        ],
-        "valid_from": "01-07-2024",
-        "valid_to": "31-07-2024"
-    },
-    {
-        "id": 7,
-        "pol": "Copenhagen",
-        "pod": "Jebel Ali",
+        "pol": "Nhava Sheva",
+        "pod": "Los Angeles",
         "cargo_type": "Consol Cargo",
         "type" : "40 FT",
         "liner" : "ONE",
-        "transhipment": ["Singapore"],
-        "final_booking_rate": "3,053",
-        "exchange_rate": "Considering USD-DKK exchange Rate as 6.60",
+        "transhipment": [],
+        "final_booking_rate": "3,600",
+        "exchange_rate": "Considering USD-INR exchange Rate as 84.71",
         "charges": [
             {
                 "name": "Freight Charges",
+                "total_price" :"3,600",
                 "freight_charges": {
                     "basic_ocean_freight": {
                         "basis": "Container",
                         "name": "Basic Ocean freight",
                         "qty": 1,
                         "currency": "USD",
-                        "unit_rate": "1,650",
-                        "total_rate": "1,650",
-                        "usd_rate": "1,650"
-                    }
-                }
-            },
-            {
-                "name": "Origin Charges",
-                "origin_charges": {
-                    "doc_fee": {
-                        "basis": "BL",
-                        "name": "Document Fee - origin",
-                        "qty": 1,
-                        "currency": "DKK",
-                        "unit_rate": 450,
-                        "total_rate": 450,
-                        "usd_rate": 68
-                    },
-                    "csc": {
-                        "basis": "Container",
-                        "name": "EU ETS Surcharge",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": 62,
-                        "total_rate": 62,
-                        "usd_rate": 62
-                    },
-                    "emission_fee": {
-                        "basis": "Container",
-                        "name": "Trucking Comp",
-                        "qty": 1,
-                        "currency": "DKK",
-                        "unit_rate": "1,800",
-                        "total_rate": "1,800",
-                        "usd_rate": 273
-                    }
-                }
-            },
-            {
-                "name": "Destination Charges",
-                "destination_charges": {
-                    "sed_fee": {
-                        "basis": "Container",
-                        "name": "Emergency Surcharge",
-                        "qty": 1,
-                        "currency": "USD",
-                        "unit_rate": "1,000",
-                        "total_rate": "1,000",
-                        "usd_rate": "1,000"
+                        "unit_rate": "3,600",
+                        "total_rate": "3,600",
+                        "usd_rate": "3,600"
                     }
                 }
             }
         ],
         "valid_from": "01-07-2024",
         "valid_to": "31-08-2024"
+    },
+    {
+        "id": 7,
+        "pol": "Nhava Sheva",
+        "pod": "Los Angeles",
+        "cargo_type": "Consol Cargo",
+        "type" : "45 FT",
+        "liner" : "ONE",
+        "transhipment": [],
+        "final_booking_rate": "4,560",
+        "exchange_rate": "Considering USD-INR exchange Rate as 84.71",
+        "charges": [
+            {
+                "name": "Freight Charges",
+                "total_price" :"4,560",
+                "freight_charges": {
+                    "basic_ocean_freight": {
+                        "basis": "Container",
+                        "name": "Basic Ocean freight",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": "4,560",
+                        "total_rate": "4,560",
+                        "usd_rate": "4,560"
+                    }
+                }
+            }
+        ],
+        "valid_from": "01-07-2024",
+        "valid_to": "31-08-2024"
+    },
+    {
+        "id": 7,
+        "pol": "Nhava Sheva",
+        "pod": "Los Angeles",
+        "cargo_type": "Consol Cargo",
+        "type" : "20 FT",
+        "liner" : "ONE",
+        "transhipment": [],
+        "final_booking_rate": "2,880",
+        "exchange_rate": "Considering USD-INR exchange Rate as 84.71",
+        "charges": [
+            {
+                "name": "Freight Charges",
+                "total_price" :"2,880",
+                "freight_charges": {
+                    "basic_ocean_freight": {
+                        "basis": "Container",
+                        "name": "Basic Ocean freight",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": "2,880",
+                        "total_rate": "2,880",
+                        "usd_rate": "2,880"
+                    }
+                }
+            }
+        ],
+        "valid_from": "24-02-2025",
+        "valid_to": "06-03-2025"
+    },
+    {
+        "id": 7,
+        "pol": "Nhava Sheva",
+        "pod": "Jebel Ali",
+        "cargo_type": "Consol Cargo",
+        "type" : "20 FT",
+        "liner" : "EMIRATES",
+        "transhipment": [],
+        "final_booking_rate": "208",
+        "exchange_rate": "*Considering USD-INR exchange Rate as 84.71",
+        "charges": [
+            {
+                "name": "Freight Charges",
+                "total_price" :"200",
+                "freight_charges": {
+                    "basic_ocean_freight": {
+                        "basis": "Container",
+                        "name": "Basic Ocean freight",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": "200",
+                        "total_rate": "200",
+                        "usd_rate": "200"
+                    }
+                }
+            },
+            {
+                "name": "Origin Charges",
+                "total_price" :"8",
+                "origin_charges": {
+                    "thc_origin": {
+                        "basis": "Container",
+                        "name": "Seal Fee",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": "8",
+                        "total_rate": "8",
+                        "usd_rate": "8"
+                    }
+                }
+            }
+            
+        ],
+        "valid_from": "01-03-2025",
+        "valid_to": "31-03-2025"
+    },
+    {
+        "id": 7,
+        "pol": "Nhava Sheva",
+        "pod": "Jebel Ali",
+        "cargo_type": "Consol Cargo",
+        "type" : "40 FT",
+        "liner" : "EMIRATES",
+        "transhipment": [],
+        "final_booking_rate": "308",
+        "exchange_rate": "*Considering USD-INR exchange Rate as 84.71",
+        "charges": [
+            {
+                "name": "Freight Charges",
+                "total_price" :"300",
+                "freight_charges": {
+                    "basic_ocean_freight": {
+                        "basis": "Container",
+                        "name": "Basic Ocean freight",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": "300",
+                        "total_rate": "300",
+                        "usd_rate": "300"
+                    }
+                }
+            },
+            {
+                "name": "Origin Charges",
+                "total_price" :"8",
+                "origin_charges": {
+                    "thc_origin": {
+                        "basis": "Container",
+                        "name": "Seal Fee",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": "8",
+                        "total_rate": "8",
+                        "usd_rate": "8"
+                    }
+                }
+            },
+            {
+                "name": "Destination Charges",
+                "total_price" : "-"
+            }
+        ],
+        "valid_from": "01-03-2025",
+        "valid_to": "31-03-2025"
+    },
+     {
+        "id": 7,
+        "pol": "Nhava Sheva",
+        "pod": "Jebel Ali",
+        "cargo_type": "Consol Cargo",
+        "type" : "20 FT",
+        "liner" : "WAN HAI",
+        "transhipment": [],
+        "final_booking_rate": "224",
+        "exchange_rate": "*Considering USD-INR exchange Rate as 84.71",
+        "charges": [
+            {
+                "name": "Freight Charges",
+                "total_price" :"150",
+                "freight_charges": {
+                    "basic_ocean_freight": {
+                        "basis": "Container",
+                        "name": "Basic Ocean freight",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": "150",
+                        "total_rate": "150",
+                        "usd_rate": "150"
+                    }
+                }
+            },
+            {
+                "name": "Origin Charges",
+                "total_price" :"72.1",
+                "origin_charges": {
+                    "thc_origin": {
+                        "basis": "Container",
+                        "name": "HSS : SEAL CHARGES",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": "10",
+                        "total_rate": "10",
+                        "usd_rate": "10"
+                    },
+                    "document_charges": {
+                        "basis": "BL",
+                        "name": "DOC : DOCUMENTATION CHARGES",
+                        "qty": 1,
+                        "currency": "INR",
+                        "unit_rate": "4500",
+                        "total_rate": "4500",
+                        "usd_rate": "53"
+                    },
+                    "terminal_charge": {
+                        "basis": "Container",
+                        "name": "CESE: TERMINAL INFRASTRUCTURE CHARGES",
+                        "qty": 1,
+                        "currency": "INR",
+                        "unit_rate": "25",
+                        "total_rate": "25",
+                        "usd_rate": "0.3"
+                    },
+                    "form_13_charge": {
+                        "basis": "Container",
+                        "name": "EFSC : FORM 13 CHARGES",
+                        "qty": 1,
+                        "currency": "INR",
+                        "unit_rate": "150",
+                        "total_rate": "150",
+                        "usd_rate": "1.8"
+                    },
+                    "toll_charge": {
+                        "basis": "Container",
+                        "name": "TTCE : TOLL CHARGES",
+                        "qty": 1,
+                        "currency": "INR",
+                        "unit_rate": "544",
+                        "total_rate": "544",
+                        "usd_rate": "6.4"
+                    },
+                    "mandatory_user": {
+                        "basis": "Container",
+                        "name": "MUCE : MANDATORY USER CHARGES",
+                        "qty": 1,
+                        "currency": "INR",
+                        "unit_rate": "200",
+                        "total_rate": "200",
+                        "usd_rate": "2.4"
+                    }
+                }
+            },
+            {
+                "name": "Destination Charges",
+                "total_price" : "53",
+                "mandatory_user": {
+                        "basis": "TLX",
+                        "name": "TLX : BL SURRENDER/TLX RELEASE CHARGES",
+                        "qty": 1,
+                        "currency": "INR",
+                        "unit_rate": "4500",
+                        "total_rate": "4500",
+                        "usd_rate": "53"
+                    }
+            }
+        ],
+        "valid_from": "01-03-2025",
+        "valid_to": "15-03-2025"
+    },
+    {
+        "id": 7,
+        "pol": "Nhava Sheva",
+        "pod": "Jebel Ali",
+        "cargo_type": "Consol Cargo",
+        "type" : "40 FT",
+        "liner" : "WAN HAI",
+        "transhipment": [],
+        "final_booking_rate": "381",
+        "exchange_rate": "*Considering USD-INR exchange Rate as 84.71",
+        "charges": [
+            {
+                "name": "Freight Charges",
+                "total_price" :"300",
+                "freight_charges": {
+                    "basic_ocean_freight": {
+                        "basis": "Container",
+                        "name": "Basic Ocean freight",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": "300",
+                        "total_rate": "300",
+                        "usd_rate": "300"
+                    }
+                }
+            },
+            {
+                "name": "Origin Charges",
+                "total_price" :"73.9",
+                "origin_charges": {
+                    "thc_origin": {
+                        "basis": "Container",
+                        "name": "HSS : SEAL CHARGES",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": "10",
+                        "total_rate": "10",
+                        "usd_rate": "10"
+                    },
+                    "document_charges": {
+                        "basis": "BL",
+                        "name": "DOC : DOCUMENTATION CHARGES",
+                        "qty": 1,
+                        "currency": "INR",
+                        "unit_rate": "4500",
+                        "total_rate": "4500",
+                        "usd_rate": "53"
+                    },
+                    "terminal_charge": {
+                        "basis": "Container",
+                        "name": "CESE: TERMINAL INFRASTRUCTURE CHARGES",
+                        "qty": 1,
+                        "currency": "INR",
+                        "unit_rate": "50",
+                        "total_rate": "50",
+                        "usd_rate": "0.6"
+                    },
+                    "form_13_charge": {
+                        "basis": "Container",
+                        "name": "EFSC : FORM 13 CHARGES",
+                        "qty": 1,
+                        "currency": "INR",
+                        "unit_rate": "150",
+                        "total_rate": "150",
+                        "usd_rate": "1.8"
+                    },
+                    "toll_charge": {
+                        "basis": "Container",
+                        "name": "TTCE : TOLL CHARGES",
+                        "qty": 1,
+                        "currency": "INR",
+                        "unit_rate": "1089",
+                        "total_rate": "1089",
+                        "usd_rate": "12.9"
+                    },
+                    "mandatory_user": {
+                        "basis": "Container",
+                        "name": "MUCE : MANDATORY USER CHARGES",
+                        "qty": 1,
+                        "currency": "INR",
+                        "unit_rate": "200",
+                        "total_rate": "200",
+                        "usd_rate": "2.4"
+                    }
+                }
+            },
+            {
+                "name": "Destination Charges",
+                "total_price" : "53",
+                "mandatory_user": {
+                        "basis": "TLX",
+                        "name": "TLX : BL SURRENDER/TLX RELEASE CHARGES",
+                        "qty": 1,
+                        "currency": "INR",
+                        "unit_rate": "4500",
+                        "total_rate": "4500",
+                        "usd_rate": "53"
+                    }
+            }
+        ],
+        "valid_from": "01-03-2025",
+        "valid_to": "15-03-2025"
+    },
+    {
+        "id": 7,
+        "pol": "Nhava Sheva",
+        "pod": "Jebel Ali",
+        "cargo_type": "Consol Cargo",
+        "type" : "20 FT",
+        "liner" : "COSCO",
+        "transhipment": [],
+        "final_booking_rate": "405",
+        "exchange_rate": "*Considering USD-INR exchange Rate as 84.71",
+        "charges": [
+            {
+                "name": "Freight Charges",
+                "total_price" :"400",
+                "freight_charges": {
+                    "basic_ocean_freight": {
+                        "basis": "Container",
+                        "name": "Basic Ocean freight",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": "400",
+                        "total_rate": "400",
+                        "usd_rate": "400"
+                    }
+                }
+            },
+            {
+                "name": "Origin Charges",
+                "total_price" :"5",
+                "origin_charges": {
+                    "thc_origin": {
+                        "basis": "Container",
+                        "name": "Seal Charges",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": "5",
+                        "total_rate": "5",
+                        "usd_rate": "5"
+                    }
+                }
+            },
+            {
+                "name": "Destination Charges",
+                "total_price" : "-"
+            }
+        ],
+        "valid_from": "01-03-2025",
+        "valid_to": "14-03-2025"
+    },
+    {
+        "id": 7,
+        "pol": "Nhava Sheva",
+        "pod": "Jebel Ali",
+        "cargo_type": "Consol Cargo",
+        "type" : "40 FT",
+        "liner" : "COSCO",
+        "transhipment": [],
+        "final_booking_rate": "505",
+        "exchange_rate": "*Considering USD-INR exchange Rate as 84.71",
+        "charges": [
+            {
+                "name": "Freight Charges",
+                "total_price" :"500",
+                "freight_charges": {
+                    "basic_ocean_freight": {
+                        "basis": "Container",
+                        "name": "Basic Ocean freight",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": "500",
+                        "total_rate": "500",
+                        "usd_rate": "500"
+                    }
+                }
+            },
+            {
+                "name": "Origin Charges",
+                "total_price" :"5",
+                "origin_charges": {
+                    "thc_origin": {
+                        "basis": "Container",
+                        "name": "Seal Charges",
+                        "qty": 1,
+                        "currency": "USD",
+                        "unit_rate": "5",
+                        "total_rate": "5",
+                        "usd_rate": "5"
+                    }
+                }
+            },
+            {
+                "name": "Destination Charges",
+                "total_price" : "-"
+            }
+        ],
+        "valid_from": "01-03-2025",
+        "valid_to": "14-03-2025"
     }
+   
 ]
