@@ -48,11 +48,6 @@ export default function PortPair() {
 
     setLoading(true);
     setShowResult(false);
-
-    setTimeout(() => {
-      setLoading(false);
-      setShowResult(true);
-    }, 2000);
   };
 
   return (
@@ -166,7 +161,7 @@ export default function PortPair() {
             </div>
           )}
           {!loading && showResult ? (
-             <ResultTable pol={formData.originCountry?.label} pod={formData.destinationCountry?.label} type={formData.containerType?.label} cargo_type = {formData.cargoType?.label} />
+             <ResultTable pol={formData.originCountry?.label} pod={formData.destinationCountry?.label} type={formData.containerType?.label} cargo_type = {formData.cargoType?.label} setLoading={setLoading} setShowResult={setShowResult} />
           )  : null}
         </Container>
       </div>
