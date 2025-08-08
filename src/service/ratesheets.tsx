@@ -2,11 +2,11 @@
 import axios from "axios";
 import apiEndpoints from "../apiEndpoints";
 
-export const fetchRateSheet = async () => {
+export const fetchRateSheet = async (containerData) => {
   const originPortId = 750;
   const destinationPortId = 913;
   // const fileId = "ac819ce3-7877-4806-ba1c-410e050fadbc";
-  const containerType = "20GP";
+  const containerType = containerData == "20 FT"  ? "20GP" : containerData == "40 FT" ? "40GP" : "20GP";
 
   const url = apiEndpoints.getRateSheet(originPortId, destinationPortId, containerType);
 

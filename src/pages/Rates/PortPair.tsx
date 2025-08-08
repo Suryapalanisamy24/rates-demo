@@ -50,7 +50,7 @@ export default function PortPair() {
         );
 
         const response = await axios.get(url);
-        const ratesData = await fetchRateSheet();
+        const ratesData = await fetchRateSheet(formData.containerType?.label);
         const groupedRates = groupFreightsWithChargesAndMatchSchedules(ratesData, response.data.result);
         console.log("Grouped rates:", groupedRates);
         console.log("Fetched rates data:", ratesData);
@@ -165,7 +165,7 @@ export default function PortPair() {
 
       const matchedRates = filteredRates.filter((rate) => {
         return (
-          rate.carrier?.toLowerCase() === scheduleCarrier && etdDate &&
+          rate.carrier?.toLowerCase().includes(scheduleCarrier) && etdDate &&
           etdDate < new Date(rate.expiryDate) && etdDate >= new Date("01 Aug 2025")
         );
       });

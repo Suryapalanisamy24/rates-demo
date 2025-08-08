@@ -1,4 +1,6 @@
 const BASE_URL = "https://demo.api.ocean.schedules.intemo.tech";
+// const BASE_URL = "http://localhost:8080";
+
 
 const DOCX_BASE_URL = "https://demo.api.docx.idp.intemo.tech";
 
