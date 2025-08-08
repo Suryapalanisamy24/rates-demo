@@ -1,4 +1,4 @@
-const BASE_URL = "https://demo.api.ocean.schedule.intemo.tech";
+const BASE_URL = "https://demo.api.ocean.schedules.intemo.tech";
 
 const DOCX_BASE_URL = "https://demo.api.docx.idp.intemo.tech";
 
