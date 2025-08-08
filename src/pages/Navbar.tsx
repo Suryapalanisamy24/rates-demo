@@ -3,7 +3,7 @@ import MainLogoSvg from "../assets/images/download.png";
 
 export default function MainNavbar(){
     return(
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="lg" className="" style={{ backgroundColor: "#fff" }}>
             <Container>
                 <Navbar.Brand href="" className="">
                 <img
@@ -18,7 +18,8 @@ export default function MainNavbar(){
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="/excel-upload">Excel Upload</Nav.Link>
-                        <Nav.Link href="/rates">Rates</Nav.Link>
+                        <Nav.Link href="/quotes">Quotation</Nav.Link>
+                        <Nav.Link href="/my-quotes">My Quotes</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

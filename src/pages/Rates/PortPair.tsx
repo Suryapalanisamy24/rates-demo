@@ -17,12 +17,12 @@ export default function PortPair() {
   });
 
   const originOption = [
-    { value: "1", label: "Nhava Sheva" },
+    { value: "1", label: "NHAVA SHEVA" },
   ];
 
   const destinationOption = [
-    { value: "2", label: "Jebel Ali" },
-    { value: "4", label: "Los Angeles" }
+    { value: "2", label: "JEBEL ALI" },
+    // { value: "4", label: "LOS ANGELES" }
   ];
 
   const cargoOption = [
@@ -143,7 +143,7 @@ export default function PortPair() {
                         Loading...
                       </>
                     ) : (
-                      "Search Rates"
+                      "Search Quotes"
                     )}
                   </Button>
                 </Form.Group>
@@ -166,7 +166,7 @@ export default function PortPair() {
             </div>
           )}
           {!loading && showResult ? (
-            <ResultTable pol={formData.originCountry?.label} pod={formData.destinationCountry?.label} type={formData.containerType?.label} cargo_type = {formData.cargoType?.label} />
+             <ResultTable pol={formData.originCountry?.label} pod={formData.destinationCountry?.label} type={formData.containerType?.label} cargo_type = {formData.cargoType?.label} />
           )  : null}
         </Container>
       </div>
