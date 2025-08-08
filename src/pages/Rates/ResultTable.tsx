@@ -72,159 +72,19 @@ interface ResultTableProps {
 //   );
 // };
 
-export default function ResultTable({ pol, pod, type, cargo_type, setLoading, setShowResult }: ResultTableProps) {
+export default function ResultTable({ schedules }: ResultTableProps) {
 
 
   const [success, setSuccess] = useState(false);
   const [selectedLiner, setSelectedLiner] = useState<any>();
   const [compareMode, setCompareMode] = useState(false);
-  const [rates, setRates] = useState<any[]>([]);
-  const [schedules, setSchedules] = useState<any[]>([]);
+
+  
 
   const [showPopup, setShowPopup] = useState(false);
 
 
-  useEffect(() => {
-    const fetchTradeLines = async () => {
-      try {
-        const url = apiEndpoints.getDirectTradeLines(
-          pol,
-          pod,
-          "01 Aug 2025",
-          "30 Aug 2025"
-        );
-
-        const response = await axios.get(url);
-        const ratesData = await fetchRateSheet();
-        const groupedRates = groupFreightsWithChargesAndMatchSchedules(ratesData, response.data.result);
-        console.log("Grouped rates:", groupedRates);
-        console.log("Fetched rates data:", ratesData);
-        console.log("Fetched trade lines:", response.data);
-        // setRates(groupedRates);
-        setSchedules(groupedRates);
-        setLoading(false);
-        setShowResult(true);
-      } catch (error) {
-        console.error("Error fetching trade lines:", error);
-        alert("Failed to fetch trade lines. Please try again later.");
-        setLoading(false);
-        setShowResult(false);
-      } finally {
-        // setLoading(false);
-        setShowResult(true);
-        setLoading(false);
-      }
-    };
-
-    fetchTradeLines();
-  }, []);
-
-
-  function groupFreightsWithChargesAndMatchSchedules(
-  ratesData: {
-    freight: any[];
-    originCharges: any[];
-    destinationCharges: any[];
-    commonCharges: any[];
-  },
-  scheduleData: any[]
-) {
-  // Step 1: Filter freights by latest expiry per carrier
-  const groupedByCarrier: Record<string, any[]> = {};
-  for (const freight of ratesData.freight) {
-    if (!freight.carrier) continue;
-    if (!groupedByCarrier[freight.carrier]) groupedByCarrier[freight.carrier] = [];
-    groupedByCarrier[freight.carrier].push(freight);
-  }
-
-  const filteredFreights = Object.values(groupedByCarrier).map((items) =>
-    items.reduce((latest, current) =>
-      new Date(current.expiryDate) > new Date(latest.expiryDate) ? current : latest
-    )
-  );
-
-  // Step 2: Group charges by fileId
-  const chargesByFileId: Record<string, any> = {};
-
-  const allCharges = [
-    ...ratesData.originCharges.map((c) => ({ ...c, chargeType: "origin" })),
-    ...ratesData.destinationCharges.map((c) => ({ ...c, chargeType: "destination" })),
-    ...ratesData.commonCharges.map((c) => ({ ...c, chargeType: "common" })),
-  ];
-
-  for (const charge of allCharges) {
-    if (!charge.fileId) continue;
-    if (!chargesByFileId[charge.fileId]) {
-      chargesByFileId[charge.fileId] = {
-        origin: [],
-        destination: [],
-        common: [],
-      };
-    }
-    chargesByFileId[charge.fileId][charge.chargeType].push(charge);
-  }
-
-  // Step 3: Combine freight + matching charges
-  const filteredRates = filteredFreights.map((freight) => {
-    const fileId = freight.fileId;
-    const matchedCharges = chargesByFileId[fileId] || {
-      origin: [],
-      destination: [],
-      common: [],
-    };
-
-    const sumCharges = (charges: any[]) =>
-    charges.reduce((acc, c) => acc + (Number(c.amount || c.rateAmount || 0)), 0);
-
-  const originTotal = sumCharges(matchedCharges.origin);
-  const destinationTotal = sumCharges(matchedCharges.destination);
-  const commonTotal = sumCharges(matchedCharges.common);
-  const freightTotal = sumCharges(freight.rates);
-
-  const freightAmount = Number(freight.totalAmount || 0);
-
-  const totalAmount = freightAmount + originTotal + destinationTotal + commonTotal + freightTotal;
-
-    return {
-      fileId,
-      carrier: freight.carrier,
-      expiryDate: freight.expiryDate,
-      startDate: freight.start_date,
-      freight,
-      totalAmount,
-      originCharges: matchedCharges.origin,
-      destinationCharges: matchedCharges.destination,
-      commonCharges: matchedCharges.common,
-    };
-  });
-
-  // Step 4: Match with scheduleData based on carrier & etd < expiryDate
-  const matchedSchedules = scheduleData.map((schedule) => {
-    const scheduleCarrier = schedule.carrierName?.toLowerCase();
-
-    let etdDate: Date | null = null;
-    // if (Array.isArray(schedule.originpolEtd) && schedule.originpolEtd.length === 3) {
-    //   const [year, month, day] = schedule.originpolEtd;
-    //   etdDate = new Date(year, month - 1, day); // Month is 0-indexed
-    // } else if (schedule.polEtd) {
-      etdDate = new Date(schedule.polEtd);
-    // }
-
-    const matchedRates = filteredRates.filter((rate) => {
-      return (
-        rate.carrier?.toLowerCase() === scheduleCarrier && etdDate &&
-        etdDate < new Date(rate.expiryDate) && etdDate >= new Date("01 Aug 2025")
-      );
-    });
-
-    return {
-      ...schedule,
-      matchedRates, // This is the rates that matched the carrier + expiry rule
-    };
-  });
-
-  return matchedSchedules;
-}
+  
 
 
  
@@ -242,7 +102,7 @@ export default function ResultTable({ pol, pod, type, cargo_type, setLoading, se
     <Container className="my-4">
 
       <Accordion>
-        {schedules.map((entry: any, index: number) => {
+        { schedules.map((entry: any, index: number) => {
           
            if (!entry.matchedRates || entry.matchedRates.length === 0) return null;
           // const isCheapest = entry.final_booking_rate === cheapestEntry.final_booking_rate;
