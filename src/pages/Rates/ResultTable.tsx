@@ -72,7 +72,7 @@ interface ResultTableProps {
 //   );
 // };
 
-export default function ResultTable({ pol, pod, type, cargo_type }: ResultTableProps) {
+export default function ResultTable({ pol, pod, type, cargo_type, setLoading, setShowResult }: ResultTableProps) {
 
 
   const [success, setSuccess] = useState(false);
@@ -102,10 +102,17 @@ export default function ResultTable({ pol, pod, type, cargo_type }: ResultTableP
         console.log("Fetched trade lines:", response.data);
         // setRates(groupedRates);
         setSchedules(groupedRates);
+        setLoading(false);
+        setShowResult(true);
       } catch (error) {
         console.error("Error fetching trade lines:", error);
+        alert("Failed to fetch trade lines. Please try again later.");
+        setLoading(false);
+        setShowResult(false);
       } finally {
         // setLoading(false);
+        setShowResult(true);
+        setLoading(false);
       }
     };
 
