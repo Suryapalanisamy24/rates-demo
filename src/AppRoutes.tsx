@@ -9,7 +9,6 @@ export default function AppRoutes() {
       <div>
         <BrowserRouter>
         <Routes>
-            {/* <Route path="/" element={<h1>Home</h1>} /> */}
             <Route path="/" element={<MainNavbar />} />
             <Route path="/excel-upload" element={<ExcelUpload />} />
             <Route path="/quotes" element={<Rates />} />
